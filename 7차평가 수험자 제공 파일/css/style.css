@@ -1,0 +1,171 @@
+*{
+  margin: 0; padding: 0;
+}
+a{
+  text-decoration: none;
+  color: #333;
+}
+ul{ list-style-type: none;}
+body{
+  color: #333;
+}
+  h2{
+    font-family: 'Noto Serif KR', 'Nanum Myeongjo', serif;
+    font-size: 18px;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    color: #000
+  }
+  
+  nav{
+    width: 700px;
+    height: 40px;
+    margin: 0 auto;
+    position: absolute;
+  }
+  /* 1depth */
+  ul#main-menu > li{
+    float: left;
+    width: 20%;
+  }
+  #main-menu > li > a{
+    display: block;
+    /* border: 1px solid red; */
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+  }
+  #main-menu > li > a:hover{
+    background:#ccc;
+    color: white;
+  }
+
+  /* 2depth */
+  #main-menu .depth2{
+    border: 1px solid #ddd;
+    font-size: 0.85em;
+    padding: 10px;
+    display: none;
+  }
+  /* hover 상태에서 보임 */
+  #main-menu .depth2.show{
+    display: block;
+  }
+
+  #main-menu .depth2:hover{
+    background: cadetblue;
+  }
+  #main-menu .depth2 li{
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+  #main-menu .depth2 li:hover{
+    color: 000;
+  }
+
+  .container{
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+  }
+  #slider{
+    width: 1200px;
+    margin: 0 auto;
+    background: #000;
+    height: 400px;
+    overflow: hidden;
+  }
+  
+  #main-header{
+    background: transparent;
+    color: #000;
+    height: 100px;
+ 
+    left: 0; top: 0;
+    width: 100%;
+    z-index: 99;
+  }
+
+  #main-header p{
+    font-size: 13px;
+  }
+  #main-header img{
+    margin-top:20px;
+    width:200px;
+    height: 70px;
+  }
+  
+  
+  #main-header nav{
+    position: absolute;
+    right: 0; top:18px;
+  }
+  #main-header nav ul { display: inline-block;}
+  #main-header nav ul li{
+    display: inline-block;
+    margin-left: 0.8em;
+    margin-right: 0.8em;
+  }
+  #main-header nav ul li a{
+     color: #000;
+    }
+  #main-header .container a{
+    width: 200px;
+    height: 40px;
+  }
+  #slider .container{
+    background: #ccc;
+  }
+  #main-header{
+    background: #fff;
+  }
+  #slider img{
+     position: absolute;
+      width: 1200px;
+      margin: 0 auto;
+      height: 400px;
+    
+
+  }
+ 
+
+#contents .container .gal img{
+   height: 220px;
+  width: 400px;
+}
+#contents .container .banner img{
+height: 220px;
+width: 400px;
+}
+#main-footer{
+  height: 100px;
+  background: #ccc;
+}
+#main-footer .container .footer-menu a{
+
+  font-size: 14px;
+  color: #000;
+}  
+#main-footer .container .copy{
+  float: right;
+  font-size: 14px;
+  margin-top: 8px;
+}
+.slider{
+  position: absolute;
+  overflow: hidden;
+  height: 400px;
+}
+.slider > img{
+  position: absolute;
+  left: 0; top: 0;
+  opacity: 0;
+  transition: 2s; /* 1초 전환효과 */
+}
+.slider > img:first-child{
+  opacity: 1;
+}
+#container .container .asdf{
+  width: 400;
+  height: 220px;
+}
